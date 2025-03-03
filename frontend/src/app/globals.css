@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gd1{
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+.gd2{
+  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+.gd3{
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+.gd4{
+  background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+}
+.gd5{
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+}
+.gd6{
+  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+}
+*{
+  box-sizing: border-box;
+  transition: 0.15s;
+}
+
+.backdrop{
+  width: 100vw;
+  position: absolute;
+  inset: 0;
+  justify-content: center;
+  display: inline-flex;
+  flex-direction: row;
+}
+h1{
+  font-size: 2.5rem;
+}
+h2{
+  font-size: large;
+  font-weight: bold;
+}
+/* nav-width =67.5px */
+#nav{
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.nav-mid li{
+  height: 100%;
+  padding: 1rem;
+  border: 1px transparent solid;
+}
+.nav-mid li:hover{
+  border-bottom: 1px rgba(255, 255, 255, 0.3) solid;
+}
+main{
+  position: relative;
+  margin-top: 6rem;
+}
+#drop{
+  transition: 0.1s;
+  display: none;
+  position: absolute;
+  left: 0;
+  top:3.5rem;
+  width: max-content;
+  border-radius: 1rem;
+  z-index: 11;
+}
+#drop li{
+  height: 100%;
+  color: #6295be;
+  background-color: black;
+  /* From https://css.glass */
+  box-shadow: 0 0.25rem 2rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8px);
+  -webkit-backdrop-filter: blur(4.8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+#drop li:hover{
+  color: white;
+  background-color: #527eb6;
+  transition: 0.2s;
+}
+
+
+input[type='text'],input[type='email'],input[type='password'], input[type='number']{
+  width: 100%;
+}
+input[type='file']{
+  padding: 0;
+  /* display: none; */
+}
+input[type='radio']{
+  scale: 1.5;
+  margin: 0 1rem;
+}
+.upfile::-webkit-file-upload-button{
+  color:white;
+  padding: 1rem;
+  width: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+}
+#result{
+  width: 30rem;
+}
+.preview{
+  width: 100%;
+}
+footer{
+  width: 100%;
+}
