@@ -8,7 +8,9 @@ Thanks this giga-chad for this repo with a star
 
 His notebook: https://www.kaggle.com/code/himhtrinh/facial-age-estimation-ai-class-nhom3-studying
 
-##### A message for old remain members. I know you will nerver check my report and you better won't. Fuck you who have done nothing for this. 2 of us carry 4 idiots with no uses, push all tasks to a fresher and we didn't even have a thanks. So yeah, fuck you.
+##### A message for old remain members. I know you will nerver check my report and you better won't. Fuck you who have done nothing for this. 2 of us carry 4 bastard with no uses, push all tasks to a fresher and we didn't even have a thanks. So yeah, fuck you.
+
+![alt text](./AI%20Templates%20for%20Capstone%20Project/Screenshot%20(534).png)
 
 ### Before running
 - Make sure you install Django with
