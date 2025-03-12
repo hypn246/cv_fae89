@@ -33,4 +33,7 @@ To use model, use `from inference import inference` in backend views. Parameter 
 
 For the best testing, I'd recommend create a test.ipynb and run on it.
 
+This project also have a file where you and test this model with webcam in `.\backend\Facial_Age_estimation_PyTorch\face_cam.ipynb`, don't forget to change the path of the model.
+![alt text](./AI%20Templates%20for%20Capstone%20Project/hih.png)
+
 Happy coding!
